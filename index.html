@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group 5</title>
+    <link rel="stylesheet" href="/modifying.css" />
+  </head>
+  <body>
+    <p id="myParagraph">Hello, world!</p>
+    <button class="btn-1" onclick="changeText()" class="btn">
+      Change Text
+    </button>
+
+    <script>
+      function changeText() {
+        document.getElementById("myParagraph").textContent = "New content!";
+        document.querySelector(".btn-1").style.color = "red";
+      }
+    </script>
+
+    <div id="myDiv"><p>Hello, world!</p></div>
+    <button onclick="changeHTML()" class="btn">Change HTML</button>
+
+    <script>
+      function changeHTML() {
+        document.getElementById("myDiv").innerHTML =
+          "<h3>This is group 5</h3><ul><li>Martin</li><li>Juliet</li><li>Lillian</li><li>Benon</li><li>Isaac</li></ul>";
+      }
+    </script>
+
+    <img
+      id="myImage"
+      src="/images/eagle-1.jpg"
+      alt="Old Image"
+      width="290px"
+      height="205px"
+    />
+    <button onclick="changeImage()" class="btn">Change Image</button>
+
+    <script>
+      const img1 = document.getElementById("myImage");
+      function changeImage() {
+        img1.src = "/images/eagle-2.jpg";
+        document.getElementById("myImage").alt = "New Image";
+      }
+    </script>
+
+    <button class="btn btn-start-game">Start dice game</button>
+
+    <button class="btn btn--roll">🎲 Roll dice</button>
+    <img src="/images/dice-5.png" alt="Playing dice" class="dice hidden" />
+
+    <!-- <button class="btn btn-change">Change button color</button> -->
+    <script src="/dice.js"></script>
+  </body>
+</html>

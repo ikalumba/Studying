@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(185, 183, 183);
+}
+
+img {
+  display: block;
+}
+
+button {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+.dice {
+  /* position: absolute; */
+  /* left: 50%;
+  top: 16.5rem;
+  transform: translateX(-50%); */
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.blue-btn {
+  background-color: blue;
+}
+.btn--roll {
+  background-color: aqua;
+}
